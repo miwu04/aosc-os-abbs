@@ -1,0 +1,16 @@
+VER=1.2.0
+# 64gram version follows TDesktop base version for tg_owt/tdlib compatibility
+OWTVER=d888bc3f79b4aa80333d8903410fa439db5f6696
+TDLIBVER=889bdf06029f98f3d04cac874dafab6f4f847c47
+SRCS="git::commit=tags/v$VER;copy-repo=true::https://github.com/TDesktop-x64/tdesktop \
+      git::rename=tg_owt;commit=${OWTVER}::https://github.com/desktop-app/tg_owt \
+      git::rename=td;commit=${TDLIBVER}::https://github.com/tdlib/td"
+CHKSUMS="SKIP \
+         SKIP \
+         SKIP"
+SUBDIR="64gram-desktop"
+CHKUPDATE="anitya::id=0"
+ENVREQ__ARM64="total_mem=60"
+ENVREQ__LOONGARCH64="total_mem_per_core=4"
+ENVREQ__LOONGSON3="total_mem_per_core=4"
+ENVREQ__PPC64EL="total_mem_per_core=4"
