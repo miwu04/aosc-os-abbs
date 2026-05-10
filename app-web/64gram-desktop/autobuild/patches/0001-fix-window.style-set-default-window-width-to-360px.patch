@@ -1,4 +1,4 @@
-From 889aa0c695ba4b3d6138168b8f4fd81b4d1efc13 Mon Sep 17 00:00:00 2001
+From f28edfefc082435f3e5d948aac4f229aad58db0f Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 9 Apr 2024 16:36:00 +0800
 Subject: [PATCH 01/10] fix(window.style): set default window width to 360px
@@ -9,7 +9,7 @@ This allows the Telegram window to scale properly on the PinePhone.
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/Telegram/SourceFiles/window/window.style b/Telegram/SourceFiles/window/window.style
-index 49f6f7e9..9024e76a 100644
+index ffc19b6e..120870d3 100644
 --- a/Telegram/SourceFiles/window/window.style
 +++ b/Telegram/SourceFiles/window/window.style
 @@ -10,7 +10,7 @@ using "ui/widgets/widgets.style";

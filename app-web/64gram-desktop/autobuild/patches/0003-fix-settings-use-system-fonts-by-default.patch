@@ -1,4 +1,4 @@
-From 61083fdcfd68fb91d392aa54823d260ee1dd0688 Mon Sep 17 00:00:00 2001
+From 724d5214e3124de255b8f890feb2907a85a6dbec Mon Sep 17 00:00:00 2001
 From: Jiangjin Wang <kaymw@aosc.io>
 Date: Mon, 6 May 2024 00:06:32 -0700
 Subject: [PATCH 03/10] fix(settings): use system fonts by default

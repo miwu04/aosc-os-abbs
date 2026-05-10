@@ -1,4 +1,4 @@
-From f192c0ae95b7caba15cacc4c89867a0dee11f675 Mon Sep 17 00:00:00 2001
+From 9844ab14abe52432ca995c5915ed04f9fe18f218 Mon Sep 17 00:00:00 2001
 From: Kaiyang Wu <origincode@aosc.io>
 Date: Thu, 3 Jul 2025 19:04:36 -0700
 Subject: [PATCH 09/10] fix(credits_amount.h): include cmath for std::floor

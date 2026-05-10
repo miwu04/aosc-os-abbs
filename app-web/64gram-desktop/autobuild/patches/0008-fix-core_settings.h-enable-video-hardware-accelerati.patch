@@ -1,4 +1,4 @@
-From 0ca6a566ddfa308c59bc7bd2cdce030ceb476130 Mon Sep 17 00:00:00 2001
+From 525ad623459f5acb2ce572658863335f100ecb18 Mon Sep 17 00:00:00 2001
 From: Kaiyang Wu <self@origincode.me>
 Date: Wed, 19 Mar 2025 21:30:27 -0700
 Subject: [PATCH 08/10] fix(core_settings.h): enable video hardware

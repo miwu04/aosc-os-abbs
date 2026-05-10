@@ -1,4 +1,4 @@
-From a850d74c51444c067b0a8f6df52fbf79d68cadc1 Mon Sep 17 00:00:00 2001
+From 3e6ba179151fd9bad72fd033df99175aeab42fb2 Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 9 Apr 2024 17:43:49 +0800
 Subject: [PATCH 02/10] fix(core_settings.h): use system window decoration by
