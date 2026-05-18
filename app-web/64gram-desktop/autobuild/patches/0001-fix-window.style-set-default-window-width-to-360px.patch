@@ -1,4 +1,4 @@
-From f28edfefc082435f3e5d948aac4f229aad58db0f Mon Sep 17 00:00:00 2001
+From 8948cdcc1d6bbe077526e3ab294e65fcbc89b3da Mon Sep 17 00:00:00 2001
 From: Mingcong Bai <jeffbai@aosc.io>
 Date: Tue, 9 Apr 2024 16:36:00 +0800
 Subject: [PATCH 01/10] fix(window.style): set default window width to 360px

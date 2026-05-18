@@ -1,4 +1,4 @@
-From 9dbd8376823b27c7d59bca69414372cf7d482d52 Mon Sep 17 00:00:00 2001
+From 4d0530be63383e3399951627d7ee430b624c4b15 Mon Sep 17 00:00:00 2001
 From: Jiangjin Wang <kaymw@aosc.io>
 Date: Mon, 6 May 2024 17:15:17 -0700
 Subject: [PATCH 04/10] Remove the confusing "Default" option from selectable

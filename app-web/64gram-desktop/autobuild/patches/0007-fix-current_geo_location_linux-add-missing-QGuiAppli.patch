@@ -1,4 +1,4 @@
-From 87ace19251bcf80b3a2b03121c3bcd6ed56ad27d Mon Sep 17 00:00:00 2001
+From fb37cff681423d22ccb53f00b11ca95078997e9c Mon Sep 17 00:00:00 2001
 From: Kaiyang Wu <self@origincode.me>
 Date: Thu, 13 Feb 2025 22:30:40 -0800
 Subject: [PATCH 07/10] fix(current_geo_location_linux): add missing

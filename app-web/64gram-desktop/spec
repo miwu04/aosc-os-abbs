@@ -1,4 +1,4 @@
-VER=1.2.2
+VER=1.2.3
 # 64gram version follows TDesktop base version for tg_owt/tdlib compatibility
 OWTVER=d888bc3f79b4aa80333d8903410fa439db5f6696
 TDLIBVER=889bdf06029f98f3d04cac874dafab6f4f847c47

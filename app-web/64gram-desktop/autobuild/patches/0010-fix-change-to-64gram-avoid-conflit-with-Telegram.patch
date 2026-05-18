@@ -1,6 +1,6 @@
-From 54b8a7c7828013b3d0d6127795ded05ad8c301e5 Mon Sep 17 00:00:00 2001
+From c3b8829a1cff878198b44fee947eb14c87aa0ad2 Mon Sep 17 00:00:00 2001
 From: miwu04 <me@alanlin.icu>
-Date: Mon, 11 May 2026 03:05:45 +0800
+Date: Mon, 18 May 2026 21:10:55 +0800
 Subject: [PATCH 10/10] fix: change to 64gram avoid conflit with Telegram
 
 ---
@@ -9,10 +9,10 @@ Subject: [PATCH 10/10] fix: change to 64gram avoid conflit with Telegram
  2 files changed, 23 insertions(+), 23 deletions(-)
 
 diff --git a/Telegram/CMakeLists.txt b/Telegram/CMakeLists.txt
-index 71379c75..3709a4ec 100644
+index 078b8955..d982206e 100644
 --- a/Telegram/CMakeLists.txt
 +++ b/Telegram/CMakeLists.txt
-@@ -2121,7 +2121,7 @@ else()
+@@ -2123,7 +2123,7 @@ else()
          set(bundle_identifier "com.tdesktop.Telegram")
      endif()
      set(bundle_entitlements "Telegram.entitlements")
@@ -21,7 +21,7 @@ index 71379c75..3709a4ec 100644
  endif()
  
  if (CMAKE_GENERATOR STREQUAL Xcode)
-@@ -2345,23 +2345,23 @@ if (LINUX AND DESKTOP_APP_USE_PACKAGED)
+@@ -2347,23 +2347,23 @@ if (LINUX AND DESKTOP_APP_USE_PACKAGED)
      configure_file("../lib/xdg/io.github.tdesktop_x64.TDesktop.metainfo.xml" "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.metainfo.xml" @ONLY)
      generate_appstream_changelog(Telegram "${CMAKE_SOURCE_DIR}/64gram_changelog.txt" "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.metainfo.xml")
      install(TARGETS Telegram RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}" BUNDLE DESTINATION "${CMAKE_INSTALL_BINDIR}")
@@ -63,7 +63,7 @@ index 71379c75..3709a4ec 100644
      install(FILES "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.service" DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/dbus-1/services")
      install(FILES "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.metainfo.xml" DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/metainfo")
 diff --git a/lib/xdg/io.github.tdesktop_x64.TDesktop.desktop b/lib/xdg/io.github.tdesktop_x64.TDesktop.desktop
-index d6f7e9a4..e8b06eb5 100644
+index d6f7e9a4..8999c5d1 100644
 --- a/lib/xdg/io.github.tdesktop_x64.TDesktop.desktop
 +++ b/lib/xdg/io.github.tdesktop_x64.TDesktop.desktop
 @@ -1,9 +1,9 @@
@@ -73,7 +73,7 @@ index d6f7e9a4..e8b06eb5 100644
 -TryExec=Telegram
 -Exec=Telegram -- %U
 -Icon=org.telegram.desktop
-+TryExec=64gram-desktop
++TryExec=64gram
 +Exec=64gram -- %U
 +Icon=64gram
  Terminal=false
