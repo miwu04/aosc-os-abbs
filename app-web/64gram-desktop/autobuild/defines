@@ -45,5 +45,7 @@ NOLTO__RISCV64=1
 # FIXME: LTO requires enormous amount of RAM
 NOLTO__LOONGSON3=1
 
+NOLTO__LOONGARCH64=1
+
 # FIXME: relocation truncated to fit: R_MIPS_GOT_PAGE against `.text'
 AB_FLAGS_OS__LOONGSON3=1
