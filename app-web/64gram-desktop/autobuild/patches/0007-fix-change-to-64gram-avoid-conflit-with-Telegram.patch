@@ -1,7 +1,7 @@
-From c3b8829a1cff878198b44fee947eb14c87aa0ad2 Mon Sep 17 00:00:00 2001
+From 20a5d4ee7a4310c13173975b15828446bb53281e Mon Sep 17 00:00:00 2001
 From: miwu04 <me@alanlin.icu>
 Date: Mon, 18 May 2026 21:10:55 +0800
-Subject: [PATCH 10/10] fix: change to 64gram avoid conflit with Telegram
+Subject: [PATCH 7/7] fix: change to 64gram avoid conflit with Telegram
 
 ---
  Telegram/CMakeLists.txt                       | 36 +++++++++----------
@@ -9,10 +9,10 @@ Subject: [PATCH 10/10] fix: change to 64gram avoid conflit with Telegram
  2 files changed, 23 insertions(+), 23 deletions(-)
 
 diff --git a/Telegram/CMakeLists.txt b/Telegram/CMakeLists.txt
-index 078b8955..d982206e 100644
+index 15ab926b..d8df95b6 100644
 --- a/Telegram/CMakeLists.txt
 +++ b/Telegram/CMakeLists.txt
-@@ -2123,7 +2123,7 @@ else()
+@@ -2185,7 +2185,7 @@ else()
          set(bundle_identifier "com.tdesktop.Telegram")
      endif()
      set(bundle_entitlements "Telegram.entitlements")
@@ -21,7 +21,7 @@ index 078b8955..d982206e 100644
  endif()
  
  if (CMAKE_GENERATOR STREQUAL Xcode)
-@@ -2347,23 +2347,23 @@ if (LINUX AND DESKTOP_APP_USE_PACKAGED)
+@@ -2410,23 +2410,23 @@ if (LINUX AND DESKTOP_APP_USE_PACKAGED)
      configure_file("../lib/xdg/io.github.tdesktop_x64.TDesktop.metainfo.xml" "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.metainfo.xml" @ONLY)
      generate_appstream_changelog(Telegram "${CMAKE_SOURCE_DIR}/64gram_changelog.txt" "${CMAKE_CURRENT_BINARY_DIR}/io.github.tdesktop_x64.TDesktop.metainfo.xml")
      install(TARGETS Telegram RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}" BUNDLE DESTINATION "${CMAKE_INSTALL_BINDIR}")

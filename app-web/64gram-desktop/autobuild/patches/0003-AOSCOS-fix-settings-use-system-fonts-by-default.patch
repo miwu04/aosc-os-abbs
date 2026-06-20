@@ -1,7 +1,7 @@
-From d3c5f5e5d0660a1afdb38b9e974b6e29c553de13 Mon Sep 17 00:00:00 2001
+From e3b166067dfd46b3c841bdb2ffd922d08bd94a07 Mon Sep 17 00:00:00 2001
 From: Jiangjin Wang <kaymw@aosc.io>
 Date: Mon, 6 May 2024 00:06:32 -0700
-Subject: [PATCH 03/10] fix(settings): use system fonts by default
+Subject: [PATCH 3/6] AOSCOS: fix(settings): use system fonts by default
 
 ---
  Telegram/SourceFiles/core/core_settings.h | 3 ++-

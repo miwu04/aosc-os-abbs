@@ -1,10 +1,10 @@
-From 84c00cda8c134df0d4493c720a247f16a9358c25 Mon Sep 17 00:00:00 2001
-From: Kaiyang Wu <self@origincode.me>
-Date: Wed, 19 Mar 2025 21:30:27 -0700
-Subject: [PATCH 08/10] fix(core_settings.h): enable video hardware
+From 8330a771e633246a22442c1f5375325206adc9cd Mon Sep 17 00:00:00 2001
+From: Kaiyang Wu <origincode@aosc.io>
+Date: Mon, 15 Jun 2026 17:12:22 +0800
+Subject: [PATCH 5/6] AOSCOS: fix(core_settings.h): enable video hardware
  acceleration by default
 
-Signed-off-by: Kaiyang Wu <self@origincode.me>
+Signed-off-by: Kaiyang Wu <origincode@aosc.io>
 ---
  Telegram/SourceFiles/core/core_settings.h | 4 ----
  1 file changed, 4 deletions(-)
